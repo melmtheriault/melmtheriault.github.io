@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chimney AI —  Melissa Thériault</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Home</a>
+				<nav>
+					<ul>
+					
+						<li><a href="index.html#one" class="active">Work</a></li>
+						<li><a href="index.html#three" class="active">About</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							
+							<span class="image fit"><img src="images/Chimney map mockup.png" alt="" /></span>
+							<section>
+								<div class="blocktext">										
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Client</th>
+												<th>My Role</th>
+												<th>Skills</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Chimney AI</td>
+												<td>Product Designer</td>
+												<td>User experience design <br> Interaction design <br> Prototyping</td>
+											</tr>
+											</tbody>
+									</tfoot>
+									</table>
+								</div>
+								<h1 class="major"></h1>
+								</div>
+								
+							</section>
+
+							<div class="blocktext"> 
+								<h3>Context</h3>
+								<p>Chimney wants to be known as a place where you can find your dream home in a matter of minutes with the help of AI-powered recommendations based on buyers’ preferences and priorities. </p>
+
+									<p>For our MVP, the team wanted to find a way to integrate a map as a part of the results page, however it was unclear how users should be able to interact with the map.</p>
+									
+									<h1 class="major"></h1>
+								</div>
+
+							<div class="blocktext">
+								<h3>Discovery</h3>
+								<h4>Understanding the home buyer</h4>
+									<p>To save on resources and time for our MVP, we created a provisonal persona based on existing market data and industry knowledge the team already collect to make assumptions about a home buyer's search process and pain points.</p>
+									<span class="image fit"><img src="images/propersona.jpg" alt="" /></span>									
+									
+																				
+								<h4>Understanding the business</h4>				
+								<p>Stakeholder interviews were up next. Understanding the preliminary product vision and business drivers with stakeholder interviews to understand all the layers of information needed was vital to know what was important and what wasn't. </p>
+							
+								<h4>Must haves</h4>
+									
+										<div class="col-6 col-12-medium">
+											<ul>
+												<li><b>3 zoom levels:</b> municipality, neighbourhood block, and property level</li>
+												<li><b>Transparency: </b>buyers need freedom to explore outside what we recommend</li>
+												<li><b>Consistent with list results:</b> map must coordinate with list results</li>
+											</ul>
+										</div>
+										<h4>Understanding the market</h4>
+										<p>Studying map design patterns from other real estate sites, and general accommodation booking sites, gave me an understanding of existing map functionaliaties and opportunities for Chimney. One takeaway was that some sites use heatmaps, but for a single such as school quality or crime rates in a neighbourhood. Replicating a similair pattern for entire neighbourhoods based on the scores that Chimney calculates for users was central to the concepts I intially drafted.</p>
+										<span class="image fit"><img src="images/Market.png" alt="" /></span>	
+										<h1 class="major"></h1>
+								</div>	
+								<div class="blocktext">
+									<h3>Design</h3>
+									<h2>How might we help buyers find a property with more confidence and less effort with a map?</h2>
+									<p>To frame the user goals of this project, I chose an Experience Outcome (above). Next, I sketched a quick & dirty concept to share with stakeholders to align on map interactions and user flow before developing detailed wireframes.</p>
+									<span class="image fit"><img src="images/sketch.jpg" alt="" /></span>
+									<p>As the design iterations progressed, we moved away from “this map should give a preview of all the properties we have listed” towards “this map should help buyers narrow down their search of properties” by only showing property pins at the block level once a user has made a decision to view a neighbourhood in more detail. 
+									<p>Chimney also offers different match scores for things like neighbourhood match, property match, demographic match, etc., depending on what users input during their onboarding. However, translating these scores into a map view was a big challenge. Since we had data at the neighbourhood block level in addition to the overall neighbourhood, we decided to create a breakpoint between these two views and create two heatmaps. To let users know which heatmap was being used, labels at the top of the map were added and respective legends would change dynamically as well.</p>
+									<h1 class="major"></h1>
+								</div>
+								<div class="blocktext">
+									<h3>Outcome</h3>
+									<p>The last piece was to start designing leveraging existing ui components in our design system and building out the remaining ui elements. </p>
+								<h4>Map UI Elements</h4>
+								<span class="image fit"><img src="images/Map UI Elements.jpg" alt="" /></span>
+								<h4>Visualizing property listing data</h4>
+								<p>We hope to make it easier for home buyers to quickly browse and find properties relevant to their preferences with the help of a heatmap layered on the existing map.</p>
+								<span class="image fit"><img src="images/Visualizing property listing data using map.png" alt="" /></span>
+								<h4>Unbiased information</h4>
+								<p>The heatmap outlines which municipalities and neighbourhoods best match buyers’ priorities, but we don’t prevent exploration of areas that don’t exactly match their preferences. </p>
+								<span class="image fit"><img src="images/Unbiased information screen.png" alt="" /></span>
+								<h4>You've already seen this home</h4>
+								<p>Previously viewed properties will be highlighted on the map so buyers don’t waste time looking at something twice (well, not intentionally anyway).</p>
+								<span class="image fit"><img src="images/Already viewed screen.png" alt="" /></span>	
+								<h1 class="major"></h1>
+							</div>
+							<div class="blocktext">
+								<h3 style="margin-bottom:1cm;">Final Design & Prototype</h3>
+								<iframe style="margin-bottom:1cm;" src="https://drive.google.com/file/d/14qWv4wuwSzCmxQataYBWmWalD36KYQHz/preview" width="640" height="480"></iframe>
+								<h1 class="major"></h1>
+							</div>
+							<div class="blocktext">
+								<h3>Next Steps & Reflection</h3>
+								<p>We plan to run sets of usability tests with real users to test the assumptions we have made in developing our MVP to measure task completion rates, overall satisfaction, and keep iterating on our design. We hypothesis that by increasing the task completion rate, users can exert less effort on search and more time on viewing properties they actually like, ultimately leading to increased retention rate over time.  </p>
+
+									<p>Our MVP is set to go live mid March 2021. 
+									</p>
+									<p>The design process is not what they teach you in school. I was brought on to the project to help design concepts for Chimney, but learned that when trying to build a new product under short timelines and with limited resources, work that is “good enough” tends to be the goal. Since we did not have any generative research at the time of the map conception, I leveraged what we had internally and made assumptions about who and why we were designing the map. I learned the art of making assumptions and worked within the constraints of the design task at hand to build a first version of a new feature, which really reinforces the notion that delivering value doesn’t follow a hard process. </p>
+							</div>
+
+					</section>
+				
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; 2021 Melissa Thériault</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
